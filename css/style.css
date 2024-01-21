@@ -2,16 +2,20 @@ html {
     background: #f2f2f2;
 }
 .kokoaBody  {
+    position: relative;
     width: 100%;
     max-width: 375px;
     height: 710px;
     margin: 100px auto;
+    padding-bottom: 45px;
     box-shadow: 0 0 20px #ccc;
     border-radius: 20px;
     font-family: 'Noto Sans KR', sans-serif;
+    overflow: hidden;
+    background: #fff;
 }
 .kokoaBody.login {
-    position: relative;
+    padding-bottom: 0;
     background: #fff url(https://cdn.pixabay.com/photo/2016/11/29/04/42/conifers-1867371_1280.jpg) no-repeat center / cover;
 }
 .loginWrap {
@@ -72,5 +76,88 @@ html {
     color: rgba(255,255,255,0.7);
     text-align: center;
     font-weight: 300;
+    font-size: 0.9rem;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+footer a {
+    width: 25%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+footer a:hover,
+footer a.active {
+    color: #005d10;
+}
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+}
+.top h2 {
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.top > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.conWrap {
+    width: 100%;
+    height: 100%;
+    padding: 70px 20px 20px;
+    overflow-y: auto;
+}
+
+.listWrap em {
+    color: #005d10;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.listWrap ul {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+.listWrap ul li {
+    margin-bottom: 10px;
+}
+
+.listWrap ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.listWrap ul li a p {
+    width: 45px;
+    height: 45px;
+    background: #ddd;
+    border-radius: 5px;
+}
+.listWrap ul li a b {
+    width: 30%;
+    font-weight: 500;
+}
+.listWrap ul li a span {
+    width: calc(70% - 85px);
+    text-align: right;
     font-size: 0.9rem;
 }
